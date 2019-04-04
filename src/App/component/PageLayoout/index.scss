@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+  body, html {
+  height: 100%;
+  margin: 0;
+  
+}
+.Page-Layout {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  header {
+    height: 80px;
+
+    .Logo {
+      position: absolute;
+      height: 86px;
+      padding: 4px 20px;
+    }
+
+    nav {
+      
+      background: rgba(2, 30, 65, 0.8);
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 10px 25px;
+
+
+      
+      button,
+      a {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 40px;
+        background: transparent;
+        padding: 0 20px;
+        text-decoration: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover,
+        &.active {
+          color: rgba(102, 24, 67, 0.822);
+         // color: rgba(12, 63, 124, 0.9);
+          border: none;
+        }
+      }
+    }
+  }
+
+  main {
+    flex-grow: 1;
+    padding: 40px 135px;
+    color: rgba(255, 255, 255, 0.906);
+    background-image: url("./UEFA.jpg");
+  height: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: cover;
+  }
+
+  footer {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    padding: 16px;
+    background:rgba(2, 30, 65, 0.8);
+    text-align: center;
+    color: #fff;
+  }
+}
